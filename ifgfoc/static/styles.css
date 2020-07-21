@@ -1,7 +1,7 @@
 body {
-    background-color: rgb(43, 47, 54);
+    background-color: #455a64
 }
 
-.nav-wrapper {
-    background-color: rgb(43, 47, 54);
+#give-card {
+    width: 400px;
 }

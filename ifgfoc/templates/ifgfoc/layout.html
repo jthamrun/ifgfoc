@@ -1,0 +1,55 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>{% block title %}{% endblock %}</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+        <link href="{% static 'styles.css' %}" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+        <nav class="nav-wrapper blue-grey darken-4">
+            <div class="container">
+              <a href="./" class="brand-logo">
+                  <img src="{% static '/images/ifgf.jpg' %}" width="90" height="80" class="responsive-img">
+              </a>
+              <a href="#" class="sidenav-trigger" data-target="mobile-links">
+                <i class="material-icons">menu</i>
+              </a>
+            
+              <ul class="right hide-on-med-and-down">
+                <li><a href="about-us">About Us</a></li>
+                <li><a href="give">Give</a></li>
+                <li><a href="care-group">Care Group</a></li>
+                <li><a href="stream">Stream</a></li>
+              </ul>
+            </div>
+        </nav>
+      
+        <ul class="sidenav" id="mobile-links">
+            <li><a href="about-us">About Us</a></li>
+            <li><a href="give">Give</a></li>
+            <li><a href="care-group">Care Group</a></li>
+            <li><a href="stream">Stream</a></li>
+        </ul>
+
+        <div class="main col-lg-10 col-md-9">
+            {% block body %}
+            {% endblock %}
+        </div>
+        
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('.sidenav').sidenav();
+            })
+        </script>
+
+        
+    </body>
+</html>
