@@ -2,6 +2,11 @@ body {
     background-color: #455a64
 }
 
-#give-card {
-    width: 400px;
+.page-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 50px;
+    font-style: italic;
 }
