@@ -1,5 +1,10 @@
 body {
-    background-color: #455a64
+    background-color: #455a64;
+    color: white;
+}
+
+a {
+    color: white;
 }
 
 .page-content {
@@ -7,6 +12,34 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    font-size: 50px;
-    font-style: italic;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-style: bold;
+}
+
+.image {
+    position: relative;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.centered > h1 {
+    font-size: 5vw;
+}
+
+.centered > a {
+    outline: none;
+    border-radius: 20px;
+    border: 1px solid white;
+}
+
+.footer-content {
+    position: relative;
+    text-align: center;
 }

@@ -7,9 +7,9 @@
         <title>{% block title %}{% endblock %}</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <!-- <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/> -->
         <link href="{% static 'styles.css' %}" rel="stylesheet">
-        <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"/> -->
+        <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+        <script src="https://kit.fontawesome.com/045519ba5e.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <nav class="nav-wrapper blue-grey darken-4">
@@ -44,6 +44,19 @@
             {% block body %}
             {% endblock %}
         </div>
+
+        <footer class="page-footer blue-grey darken-4">
+            <div class="footer-content">
+                <p> IFGF OC<br>1526 Brookhollow Dr, Santa Ana, CA 92705</p>
+                <a href="https://www.youtube.com/channel/UCnlbFb18WzWfsiYnmH10IWg">
+                  <i class="fab fa-youtube fa-3x"></i>
+                </a>
+            </div>
+            <div class="footer-copyright">
+              <div class="container">
+              </div>
+            </div>
+        </footer>
         
         <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
