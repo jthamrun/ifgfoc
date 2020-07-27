@@ -39,6 +39,10 @@ a {
     border: 1px solid white;
 }
 
+.centered > a:hover {
+    border: 1px solid grey;
+}
+
 .footer-content {
     position: relative;
     text-align: center;
