@@ -132,3 +132,25 @@ a {
 #mobile-links > li > a {
     color: white;
 }
+
+h1 {
+    text-align: center;
+}
+
+.card h5 {
+    padding: 10px 0px;
+}
+
+.card {
+    transition: .5s;
+    background: #eee;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    background: #fff;
+}
+
+.card-content > p {
+    text-align: left;
+}
