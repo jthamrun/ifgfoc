@@ -4,8 +4,15 @@ body {
     font-family: 'Blinker', sans-serif;
 }
 
-a {
+ul > li > a {
     color: white;
+    font-weight: bold;
+    letter-spacing: 2.5px;
+}
+
+.footer-content > p {
+    font-size: 22px;
+    letter-spacing: 4px;
 }
 
 .page-content {
