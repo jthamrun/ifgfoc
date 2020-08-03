@@ -25,7 +25,7 @@ SECRET_KEY = '++3q$h6t)u6^q#p1&m%e(!mg-je9+@=rn8%*cpjzim3onapiw-'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['http://ifgfoc.pythonanywhere.com/']
+ALLOWED_HOSTS = ['ifgfoc.pythonanywhere.com']
 
 
 # Application definition
