@@ -1,13 +1,17 @@
 body {
-    background-color: #212527;
+    background-color: #2f3336;
     color: white;
     font-family: 'Blinker', sans-serif;
 }
 
 ul > li > a {
-    color: white;
+    color: #ffffff;
     font-weight: bold;
     letter-spacing: 2.5px;
+}
+
+nav, .sidenav {
+    background-color: #212529 !important;
 }
 
 .footer-content > p {
@@ -105,35 +109,45 @@ ul > li > a {
     border: 1px solid grey;
 }
 
-.image {
+.hero-image {
     position: relative;
+    height: 500px;
+    background: url(../static/images/worship.jpg) no-repeat center;
+    background-size: cover;
 }
 
-.centered {
+.indexContainer {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    overflow: hidden;
     text-align: center;
+    color: white; 
+    text-transform: uppercase;
 }
 
-.centered > h1 {
-    font-size: 5vw;
+.indexContainer > h1 {
+    font-size: 6vw;
 }
 
-.centered > a {
+.indexContainer > a {
     outline: none;
     border-radius: 20px;
     border: 1px solid white;
 }
 
-.centered > a:hover {
+.indexContainer > a:hover {
     border: 1px solid grey;
 }
 
 .footer-content {
     position: relative;
     text-align: center;
+}
+
+.page-footer {
+    background-color: #212529;
 }
 
 #mobile-links > li > a {
@@ -149,15 +163,11 @@ h1 {
 }
 
 .card {
+    border: solid white;
+    background-color: #343A40;
     transition: .5s;
-    background: #eee;
 }
 
 .card:hover {
     transform: scale(1.03);
-    background: #fff;
-}
-
-.card-content > p {
-    text-align: center;
 }
