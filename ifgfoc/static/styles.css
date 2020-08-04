@@ -123,12 +123,11 @@ nav, .sidenav {
     transform: translate(-50%, -50%);
     overflow: hidden;
     text-align: center;
-    color: white; 
-    text-transform: uppercase;
+    color: white;
 }
 
 .indexContainer > h1 {
-    font-size: 6vw;
+    font-size: 6vh;
 }
 
 .indexContainer > a {
@@ -140,6 +139,11 @@ nav, .sidenav {
 .indexContainer > a:hover {
     border: 1px solid grey;
 }
+
+#indexcardcontainer {
+    width:90%;
+}
+
 
 .footer-content {
     position: relative;
@@ -154,20 +158,33 @@ nav, .sidenav {
     color: white;
 }
 
-h1 {
+h1, h3 {
     text-align: center;
+    font-family: nimbus-sans, sans-serif;
+    font-style: black;
+    font-weight: 500;
 }
 
-.card h5 {
-    padding: 10px 0px;
-}
-
-.card {
+#careCards {
     border: solid white;
     background-color: #343A40;
     transition: .5s;
 }
 
-.card:hover {
+#careCards:hover {
     transform: scale(1.03);
+}
+
+.involveCards > a {
+    outline: none;
+    border-radius: 20px;
+    border: 1px solid white;
+}
+
+.involveCards > img:hover {
+    opacity:0.5;
+}
+
+.involveCards > a:hover {
+    border: 1px solid grey;
 }
