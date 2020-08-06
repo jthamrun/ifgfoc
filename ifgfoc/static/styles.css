@@ -30,6 +30,7 @@ nav, .sidenav {
 }
 
 .give-img {
+    filter: grayscale(100%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -64,6 +65,11 @@ nav, .sidenav {
     letter-spacing: 4px;
     font-size: 22px;
     line-height: 43px;
+}
+
+.container.careGroups > h1 {
+    font-weight: 5px;
+    letter-spacing: 10px;
 }
 
 #alt-info {
@@ -111,12 +117,12 @@ nav, .sidenav {
 
 .hero-image {
     position: relative;
-    height: 500px;
+    height: 100vh;
     background: url(../static/images/worship.jpg) no-repeat center;
     background-size: cover;
 }
 
-.indexContainer {
+.indexContainer, .streamContainer {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -128,6 +134,20 @@ nav, .sidenav {
 
 .indexContainer > h1 {
     font-size: 6vh;
+    margin-bottom: 0;
+    padding-bottom: 1vh;
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.indexContainer > h3 {
+    font-size: 5vh;
+    margin-top: 0;
+    margin-bottom: 1;
+    padding-bottom: 1vh;
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 200;
 }
 
 .indexContainer > a {
@@ -140,10 +160,57 @@ nav, .sidenav {
     border: 1px solid grey;
 }
 
-#indexcardcontainer {
-    width:90%;
+.hero-stream-image {
+    position: relative;
+    height: 100vh;
+    background: url(../static/images/worship.jpg) no-repeat center;
+    background-size: cover;
 }
 
+.streamContainer a h3 {
+    font-family: 'Work Sans', sans-serif;
+    color: white;
+    border-radius: 30px;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-bottom: 2vh;
+    padding-top: 1.8vh;
+    border: solid white;
+}
+
+.streamContainer a h3:hover {
+    background-color: #212529;
+}
+
+.recenth3 h3 {
+    padding-left: 3vw;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 4vh;
+}
+
+.streamContainer {
+    width: 60vw;
+}
+
+
+
+#indexcardcontainer {
+    width:90%;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+
+#indexcardcontainer > h3 {
+    font-family: 'Work Sans', sans-serif;
+    text-align: center;
+    padding-bottom: 3vh;
+}
+
+.involveCards > h3 {
+    font-family: 'Work Sans', sans-serif;
+    text-align: center;
+    font-size: 3.5vh;
+}
 
 .footer-content {
     position: relative;
@@ -158,16 +225,10 @@ nav, .sidenav {
     color: white;
 }
 
-h1, h3 {
-    text-align: center;
-    font-family: nimbus-sans, sans-serif;
-    font-style: black;
-    font-weight: 500;
-}
-
 #careCards {
     border: solid white;
-    background-color: #343A40;
+    border-radius: 1vw;
+    background-color: transparent;
     transition: .5s;
 }
 
@@ -179,6 +240,8 @@ h1, h3 {
     outline: none;
     border-radius: 20px;
     border: 1px solid white;
+    margin-bottom: 5vh;
+    padding-bottom: 2vh;
 }
 
 .involveCards > img:hover {
@@ -188,3 +251,10 @@ h1, h3 {
 .involveCards > a:hover {
     border: 1px solid grey;
 }
+
+i {
+    color: white;
+}
+
+.grid-item { width: 25%; }
+.grid-item--width2 { width: 50%; }
