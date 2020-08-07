@@ -183,7 +183,7 @@ nav, .sidenav {
 }
 
 .recenth3 h3 {
-    padding-left: 3vw;
+    text-align: center;
     font-family: 'Work Sans', sans-serif;
     font-size: 4vh;
 }
@@ -255,6 +255,3 @@ nav, .sidenav {
 i {
     color: white;
 }
-
-.grid-item { width: 25%; }
-.grid-item--width2 { width: 50%; }

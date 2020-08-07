@@ -1,7 +1,12 @@
 {% extends "ifgfoc/layout.html" %}
+{% load static %}
 
 {% block title %}
     Stream - IFGF OC
+{% endblock %}
+
+{% block scripts %}
+    <script src="{% static '/js/script.js' %}"></script>
 {% endblock %}
 
 {% block body %}
@@ -16,6 +21,9 @@
     </div>
     <div class="recenth3">
         <h3>Recent Sermons</h3>
+        <div class="container">
+            <div class="row" id="results"></div>
+        </div>
     </div>
 
 {% endblock %}
