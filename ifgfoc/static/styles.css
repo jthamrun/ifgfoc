@@ -286,7 +286,7 @@ form {
     width: 40% !important;
 }
 
-input[type=text] {
+input[type=text], input[type=number] {
     color: white;
 }
 

@@ -19,7 +19,7 @@ class connectForm(models.Model):
     birthday = models.DateField()
 
     def __str__(self):
-        return f"{firstName} {lastName}"
+        return f"{self.firstName} {self.lastName}"
     
     class Meta:
         verbose_name = 'Connect Card'
