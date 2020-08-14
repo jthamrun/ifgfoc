@@ -281,3 +281,27 @@ nav, .sidenav {
 i {
     color: white;
 }
+
+form {
+    width: 40% !important;
+}
+
+input[type=text] {
+    color: white;
+}
+
+#connectPage {  
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: block;
+}
+
+#connectPage h1 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#connect-button {
+    margin-top: 20px;
+}
+

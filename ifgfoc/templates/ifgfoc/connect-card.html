@@ -1,0 +1,44 @@
+{% extends "ifgfoc/layout.html" %}
+{% load static %}
+{% load materializecss %}
+{ form|materializecss }
+
+{% block title %}
+    Connect Card
+{% endblock %}
+
+{% block body %}
+<div class="container" id="connectPage">
+
+    <h1>Connect Card</h1>
+    <form class="container" id="connect-form" action="{% url 'ifgfoc:connectCard' %}" method="post">
+        {% csrf_token %}
+        {{ connectCard.as_p }}
+        <div class="center-align">
+            <button id="connect-button" class="btn waves-effect waves-light grey" type="submit" name="action">Submit
+                <i class="material-icons right">send</i>
+            </button>
+        </div>
+    </form>
+</div>
+{% endblock %}
+
+{% block scripts %}
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.1/js/materialize.min.js" integrity="sha256-SrBfGi+Zp2LhAvy9M1bWOCXztRU9Ztztxmu5BcYPcPE=" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function(){
+
+        // Initialize materialize data picker
+        $('.datepicker').datepicker({'format': 'yyyy-mm-dd'});
+        $('select').formSelect();
+
+        });
+    </script>
+
+{% endblock %}
