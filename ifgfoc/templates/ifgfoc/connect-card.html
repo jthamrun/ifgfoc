@@ -9,7 +9,7 @@
 <div class="container" id="connectPage">
 
     <h1>Connect Card</h1>
-    <form class="container" id="connect-form" action="{% url 'ifgfoc:connectCard' %}" method="post">
+    <form class="container" id="connect-form" action="{% url 'ifgfoc:index' %}" method="post">
         {% csrf_token %}
         {{ connectCard.as_p }}
         <div class="center-align">
