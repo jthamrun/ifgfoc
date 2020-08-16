@@ -12,8 +12,8 @@ def aboutUs(request):
 def give(request):
     return render(request, "ifgfoc/give.html")
 
-def careGroup(request):
-    return render(request, "ifgfoc/careGroup.html")
+def caregroup(request):
+    return render(request, "ifgfoc/care-group.html")
 
 def stream(request):
     return render(request, "ifgfoc/stream.html")

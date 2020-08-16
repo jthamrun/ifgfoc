@@ -8,7 +8,7 @@ urlpatterns = [
     path("", views.index, name="index"),
     path("about-us", views.aboutUs, name="aboutUs"),
     path("give", views.give, name="give"),
-    path("care-group", views.careGroup, name="careGroup"),
+    path("care-group", views.caregroup, name="care-group"),
     path("stream", views.stream, name="stream"),
     path("connect-card", views.connectCard, name="connectCard")
 ]

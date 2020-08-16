@@ -9,40 +9,38 @@
 {% endblock %}
 
 {% block body %}
-    <div class="hero-image">
-        <div class="indexContainer">
+    <div class="landing-banner">
+        <div class="landing-banner-container">
             <h1><span>IFGF OC</h1>
-                <h3><span>Welcome Home</span></h3>
-            <a href="https://www.livestream.com/ifgfla/monroviaservice" target="_blank" class="waves-effect waves-light btn-large transparent">JOIN OUR CHURCH ONLINE</a>
+            <h3><span>Welcome Home</span></h3>
+            <a href="https://www.livestream.com/ifgfla/monroviaservice" target="_blank" class="waves-effect waves-light lighten-4 btn-large transparent">JOIN OUR CHURCH ONLINE</a>
         </div>
     </div>
-    <div class="container" id="indexcardcontainer">
+    <div class="container" id="get-involved-container">
         <h3>Get Involved</h3>
-        <div class="ministryCards">
-            <div class="row">
-                <div class="col l4 s12 center-align">
-                    <div class="involveCards">
-                        <img src="https://picsum.photos/300?grayscale">
-                        <h3>Connect Card</h3>
-                        <p>Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit.</p>
-                        <a href="{% url 'ifgfoc:connectCard' %}" class="waves-effect waves-light btn-small transparent">Connect Card</a>
-                    </div>
+        <div class="row">
+            <div class="col l4 s12 center-align">
+                <div class="get-involved-cards">
+                    <img src="https://picsum.photos/250?grayscale">
+                    <h3>Connect Card</h3>
+                    <p>Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit.</p>
+                    <a href="{% url 'ifgfoc:connectCard' %}" class="waves-effect waves-light btn-medium transparent">Connect Card</a>
                 </div>
-                <div class="col l4 s12 center-align">
-                    <div class="involveCards">
-                        <img src="https://picsum.photos/300?grayscale">
-                        <h3>Prayer Card</h3>
-                        <p>Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit.</p>
-                        <a href="#" class="waves-effect waves-light btn-small transparent">Prayer Card</a>
-                    </div>
+            </div>
+            <div class="col l4 s12 center-align">
+                <div class="get-involved-cards">
+                    <img src="https://picsum.photos/250?grayscale">
+                    <h3>Prayer Card</h3>
+                    <p>Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit.</p>
+                    <a href="#" class="waves-effect waves-light btn-medium transparent">Prayer Card</a>
                 </div>
-                <div class="col l4 s12 center-align">
-                    <div class="involveCards">
-                        <img src="https://picsum.photos/300?grayscale">
-                        <h3>Ministries</h3>
-                        <p>Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit.</p>
-                        <a href="#" class="waves-effect waves-light btn-small transparent">Ministries</a>
-                    </div>
+            </div>
+            <div class="col l4 s12 center-align">
+                <div class="get-involved-cards">
+                    <img src="https://picsum.photos/250?grayscale">
+                    <h3>Ministries</h3>
+                    <p>Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit.</p>
+                    <a href="#" class="waves-effect waves-light btn-medium transparent">Ministries</a>
                 </div>
             </div>
         </div>
