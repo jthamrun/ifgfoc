@@ -232,7 +232,7 @@ nav {
 .hero-stream-image {
     position: relative;
     height: 100vh;
-    background: url(../static/images/worship.jpg) no-repeat center;
+    background: url(../static/images/banner.jpg) no-repeat center;
     background-size: cover;
     filter: grayscale(100%);
 }

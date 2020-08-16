@@ -10,5 +10,5 @@ urlpatterns = [
     path("give", views.give, name="give"),
     path("care-group", views.caregroup, name="care-group"),
     path("stream", views.stream, name="stream"),
-    path("connect-card", views.connectCard, name="connectCard")
+    path("connect-card", views.connectcard, name="connect-card")
 ]

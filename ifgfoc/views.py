@@ -18,12 +18,13 @@ def caregroup(request):
 def stream(request):
     return render(request, "ifgfoc/stream.html")
 
-def connectCard(request):
+def connectcard(request):
     if request.method == 'POST':
         form = forms.CreateConnectCard(request.POST)
         if form.is_valid():
-            #save article to db
+            #save forms to db
             form.save()
+            return redirect('ifgfoc:index')
     else:
         form = forms.CreateConnectCard()
     return render(request, "ifgfoc/connect-card.html", {'connectCard': form})
