@@ -12,8 +12,14 @@ body {
     font-weight: 500;
 }
 
-nav, .sidenav, .page-footer {
+nav, .sidenav {
     background-color: #2B2B26 !important;
+}
+
+.page-footer {
+    background-color: #2B2B26 !important;
+    background-size: cover;
+    height: 30vh;
 }
 
 nav {
