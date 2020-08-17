@@ -9,6 +9,9 @@ i {
     color: white;
 }
 
+i:hover {
+    color: #89CFF0;
+}
 
 /*--------------------------------------------- NAV ---------------------------------------------*/
 
@@ -20,6 +23,7 @@ i {
 
 #navbar-container ul > li > a:hover, #mobile-links > li > a:hover {
     font-weight: 600;
+    color: #89CFF0;
 }
 
 nav, .sidenav, .page-footer {
@@ -47,7 +51,7 @@ nav, .sidenav, .page-footer {
 .landing-banner {
     position: relative;
     height: 95vh;
-    /*background: url(../static/images/banner.jpg) no-repeat center;*/
+    background: url(../static/images/landing.jpg) no-repeat center;
     background-color: black;
     background-size: cover;
     /*filter: grayscale(100%);*/
@@ -88,6 +92,11 @@ nav, .sidenav, .page-footer {
     padding-bottom: 2vh;
 }
 
+.landing-banner-container > a:hover {
+    color: #89CFF0;
+    border: 3px solid #89CFF0;
+}
+
 #get-involved-container {
     width:90%;
     padding-top: 2vh;
@@ -105,7 +114,6 @@ nav, .sidenav, .page-footer {
     font-family: 'Quicksand', sans-serif;
     font-size: 3.5vh;
 }
-
 
 .get-involved-cards > h3 {
     font-family: 'Quicksand', sans-serif;
@@ -127,6 +135,15 @@ nav, .sidenav, .page-footer {
     padding-right: 2vw;
     padding-top: 1vh;
     padding-bottom: 1vh;
+}
+
+.get-involved-cards > a:hover {
+    color: #89CFF0;
+    border: 1px solid #89CFF0;
+}
+
+.get-involved-cards > img {
+    background-color: #89CFF0;
 }
 
 .get-involved-cards > img:hover {
