@@ -87,6 +87,13 @@ nav {
     font-size: 3.5vh;
 }
 
+}
+
+.get-involved-cards > h3 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 3.5vh;
+}
+
 .get-involved-cards > a {
     color: white;
     font-family: 'Work Sans', sans-serif;
@@ -159,6 +166,23 @@ nav {
     font-family: 'Quicksand', sans-serif;
 }
 
+}
+
+.give-img > img {
+    outline: none;
+    border: 3px solid white;
+}
+
+#give-txt-container {
+    width: 90% !important;
+}
+
+#give-txt-container h1 {
+    font-weight: 5px;
+    letter-spacing: 0.5vw;
+    font-family: 'Quicksand', sans-serif;
+}
+
 #give-txt-container p {
     margin-top: 10vh;
     letter-spacing: 0.2vw;
@@ -191,6 +215,7 @@ nav {
     font-family: 'Quicksand', sans-serif;
     margin-bottom: 5vh;
 }
+
 
 .card.care-cards {
     background-color: transparent;
@@ -297,6 +322,12 @@ nav {
 }
 
 #mobile-links > li > a {
+    color: white;
+}
+
+i {
+    color: white;
+}
     color: white;
 }
 
