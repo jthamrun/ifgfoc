@@ -17,6 +17,12 @@ nav, .sidenav, .page-footer {
     background-color: #242423 !important;
 }
 
+.page-footer {
+    background-color: #2B2B26 !important;
+    background-size: cover;
+    height: 30vh;
+}
+
 nav {
     height: 8vh !important; 
 }
