@@ -1,5 +1,6 @@
 from django.http import HttpResponse
-from django.shortcuts import render
+from django.shortcuts import render, redirect
+from .import forms
 
 # Create your views here.
 def index(request):
@@ -16,3 +17,14 @@ def caregroup(request):
 
 def stream(request):
     return render(request, "ifgfoc/stream.html")
+
+def connectcard(request):
+    if request.method == 'POST':
+        form = forms.CreateConnectCard(request.POST)
+        if form.is_valid():
+            #save forms to db
+            form.save()
+            return redirect('ifgfoc:index')
+    else:
+        form = forms.CreateConnectCard()
+    return render(request, "ifgfoc/connect-card.html", {'connectCard': form})

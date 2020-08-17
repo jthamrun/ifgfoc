@@ -1,0 +1,25 @@
+{% extends "ifgfoc/layout.html" %}
+{% load static %}
+
+{% block title %}
+    Connect Card
+{% endblock %}
+
+{% block body %}
+<div class="container" id="connectPage">
+
+    <h1>Connect Card</h1>
+    <form class="container" id="connect-form" action="{% url 'ifgfoc:connect-card' %}" method="post">
+        {% csrf_token %}
+        {{ connectCard.as_p }}
+        <div class="center-align">
+            <button id="connect-button" class="btn waves-effect waves-light grey" type="submit" name="action">Submit
+                <i class="material-icons right">send</i>
+            </button>
+        </div>
+    </form>
+</div>
+{% endblock %}
+
+{% block scripts %}
+{% endblock %}
