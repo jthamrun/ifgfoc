@@ -1,19 +1,20 @@
 body {
-    background-color: #3C3B33;
+    background-color: #333533;
     color: white;
 }
 
-#navbar-container ul > li > a {
-    color: #ffffff;
+#navbar-container ul > li > a, #mobile-links > li > a {
+    color: white;
     letter-spacing: 0.15vw;
+    font-weight: 550;
 }
 
-#navbar-container ul > li > a:hover {
-    font-weight: 500;
+#navbar-container ul > li > a:hover, #mobile-links > li > a:hover {
+    font-weight: 600;
 }
 
 nav, .sidenav, .page-footer {
-    background-color: #2B2B26 !important;
+    background-color: #242423 !important;
 }
 
 nav {
@@ -238,6 +239,48 @@ nav {
 
 
 
+i {
+    color: white;
+}
+
+form {
+    margin-left: 20vw;
+    margin-right: 20vw;
+}
+
+input[type=text], input[type=number] {
+    color: white;
+}
+
+#connectPage, #prayerPage {  
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: block;
+}
+
+#connectPage h1 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#prayerPage h1 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#connect-button {
+    margin-top: 20px;
+}
+
+#prayer-button {
+    margin-top: 20px;
+}
+
+textarea {
+    color: white;
+}   
+
+
 /*----------------- TO - DO -----------------*/
 
 
@@ -321,53 +364,6 @@ nav {
     text-align: center;
 }
 
-#mobile-links > li > a {
-    color: white;
-}
-
 i {
-    color: white;
-}
-    color: white;
-}
-
-i {
-    color: white;
-}
-
-form {
-    margin-left: 20vw;
-    margin-right: 20vw;
-}
-
-input[type=text], input[type=number] {
-    color: white;
-}
-
-#connectPage, #prayerPage {  
-    margin-top: 50px;
-    margin-bottom: 50px;
-    display: block;
-}
-
-#connectPage h1 {
-    text-align: center;
-    margin-bottom: 50px;
-}
-
-#prayerPage h1 {
-    text-align: center;
-    margin-bottom: 50px;
-}
-
-#connect-button {
-    margin-top: 20px;
-}
-
-#prayer-button {
-    margin-top: 20px;
-}
-
-textarea {
     color: white;
 }
