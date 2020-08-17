@@ -66,6 +66,7 @@ nav {
     line-height: 6vh;
     border-radius: 30px;
     font-family: 'Quicksand', sans-serif;
+    padding-top: 0.25vh;
 }
 
 #get-involved-container {
@@ -312,7 +313,7 @@ input[type=text], input[type=number] {
     color: white;
 }
 
-#connectPage {  
+#connectPage, #prayerPage {  
     margin-top: 50px;
     margin-bottom: 50px;
     display: block;
@@ -323,7 +324,19 @@ input[type=text], input[type=number] {
     margin-bottom: 50px;
 }
 
+#prayerPage h1 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
 #connect-button {
     margin-top: 20px;
 }
 
+#prayer-button {
+    margin-top: 20px;
+}
+
+textarea {
+    color: white;
+}

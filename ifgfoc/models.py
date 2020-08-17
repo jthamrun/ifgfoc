@@ -23,3 +23,16 @@ class connectForm(models.Model):
     
     class Meta:
         verbose_name = 'Connect Card'
+
+class prayerForm(models.Model):
+    firstName = models.CharField(max_length=20)
+    lastName = models.CharField(max_length=20)
+    phoneNumber = models.PositiveIntegerField()
+    email = models.CharField(max_length=40)
+    prayerRequests = models.TextField()
+
+    def __str__(self):
+        return f"{self.firstName} {self.lastName}"
+    
+    class Meta:
+        verbose_name = 'Prayer Card'

@@ -1,0 +1,44 @@
+{% extends "ifgfoc/layout.html" %}
+{% load static %}
+
+{% block title %}
+    Prayer Card
+{% endblock %}
+
+{% block body %}
+<div class="container" id="prayerPage">
+
+    <h1>Prayer Card</h1>
+    <form class="container" id="prayer-form" action="{% url 'ifgfoc:prayer-card' %}" method="post">
+        {% csrf_token %}
+        <!-- {{ prayerCard.non_field_errors }}
+        <div class="fieldWrapper">
+            {{ prayerCard.firstName.errors }}
+            <label for="{{ prayerCard.firstName.id_for_label }}">First Name:</label>
+            {{ prayerCard.firstName }}
+
+            {{ prayerCard.lastName.errors }}
+            <label for="{{ prayerCard.lastName.id_for_label }}">Last Name:</label>
+            {{ prayerCard.lastName }}
+
+            {{ prayerCard.phoneNumber.errors }}
+            <label for="{{ prayerCard.phoneNumber.id_for_label }}">Phone Number:</label>
+            {{ prayerCard.phoneNumber }}
+
+            {{ prayerCard.prayerRequests.errors }}
+            <label for="{{ prayerCard.prayerRequests.id_for_label }}">Prayer Requests:</label>
+            {{ prayerCard.prayerRequests }}
+        </div> -->
+        {{ prayerCard.as_p }}
+
+        <div class="center-align">
+            <button id="prayer-button" class="btn waves-effect waves-light grey" type="submit" name="action">Submit
+                <i class="material-icons right">send</i>
+            </button>
+        </div>
+    </form>
+</div>
+{% endblock %}
+
+{% block scripts %}
+{% endblock %}

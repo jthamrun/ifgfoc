@@ -1,7 +1,6 @@
-from django.forms import ModelForm
+from django.forms import ModelForm, Textarea
 from django import forms
 from .import models
-
 
 class CreateConnectCard(ModelForm):
 
@@ -20,3 +19,19 @@ class CreateConnectCard(ModelForm):
             'addressCountry': 'Country',
             'addressBirthday': 'Birthday',
         }
+
+class CreatePrayerCard(ModelForm):
+
+    class Meta:
+        model = models.prayerForm
+        fields = '__all__'
+        labels = {
+            'firstName': 'First Name',
+            'lastName': 'Last Name',
+            'phoneNumber': 'Phone Number',
+            'prayerRequests': 'Prayer Requests'
+        }
+    
+    # def __init__(self, *args, **kwargs):
+    #     super().__init__(*args, **kwargs)
+    #     self.fields['prayerRequests'].widget.attrs.update({'cols': '80','rows':"80"})

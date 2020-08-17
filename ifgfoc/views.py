@@ -28,3 +28,14 @@ def connectcard(request):
     else:
         form = forms.CreateConnectCard()
     return render(request, "ifgfoc/connect-card.html", {'connectCard': form})
+
+def prayercard(request):
+    if request.method == 'POST':
+        form = forms.CreatePrayerCard(request.POST)
+        if form.is_valid():
+            #save forms to db
+            form.save()
+            return redirect('ifgfoc:index')
+    else:
+        form = forms.CreatePrayerCard()
+    return render(request, "ifgfoc/prayer-card.html", {'prayerCard': form})
