@@ -3,8 +3,6 @@ from django.shortcuts import render, redirect
 from .import forms
 
 # Create your views here.
-def handler404(request, exception):
-    return redirect("ifgfoc/index.html")
 
 def index(request):
     return render(request, "ifgfoc/index.html")

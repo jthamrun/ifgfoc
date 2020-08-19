@@ -13,5 +13,3 @@ urlpatterns = [
     path("connect", views.connectcard, name="connect-card"),
     path("pray", views.prayercard, name="prayer-card")
 ]
-
-handler404 = 'ifgfoc.views.handler404'
