@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '++3q$h6t)u6^q#p1&m%e(!mg-je9+@=rn8%*cpjzim3onapiw-'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 #'ifgfoc.pythonanywhere.com'
 ALLOWED_HOSTS = ['ifgfoc.pythonanywhere.com']
