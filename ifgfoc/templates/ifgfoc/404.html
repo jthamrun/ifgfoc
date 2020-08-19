@@ -1,9 +1,16 @@
 {% extends "ifgfoc/layout.html" %}
+{% load static %}
 
 {% block title %}
     404 Error
 {% endblock %}
 
 {% block body %}
-    <h1>404 Error</h1>
+    <div class="container center-align">
+        <h1>404 Error</h1>
+        <h3>The page that you have requested does not exist!</h3>
+        <a href="{% url 'ifgfoc:about' %}" target="_blank" class="waves-effect waves-light lighten-4 btn-large transparent">Go Back Home</a>
+    </div>
+    
+
 {% endblock %}
