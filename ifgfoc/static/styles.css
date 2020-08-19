@@ -330,33 +330,3 @@ input[type=text], input[type=number] {
 textarea {
     color: white;
 }
-
-#Error-landing > h1 {
-    font-size: 7vh;
-    margin-bottom: 0;
-    padding-bottom: 2vh;
-    font-family: 'Quicksand', sans-serif;
-}
-
-#Error-landing > h3 {
-    font-size: 5vh;
-    padding-top: 0;
-    margin-top: 0;
-    padding-bottom: 3vh;
-    font-weight: 500;
-}
-
-#Error-landing > a {
-    /*box-shadow: none !important;*/
-    border: 3px solid white;
-    box-sizing: border-box;
-    line-height: 7vh;
-    border-radius: 30px;
-    font-family: 'Quicksand', sans-serif;
-    padding-bottom: 2vh;
-}
-
-#Error-landing > a:hover {
-    color: #89CFF0;
-    border: 3px solid #89CFF0;
-}
