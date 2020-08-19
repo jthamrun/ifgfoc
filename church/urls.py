@@ -20,3 +20,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include("ifgfoc.urls"))
 ]
+
+
+handler404 = 'ifgfoc.views.handler404'
