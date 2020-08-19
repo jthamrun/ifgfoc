@@ -6,11 +6,35 @@
 {% endblock %}
 
 {% block body %}
-    <div class="container center-align" style="height: 100vh; ">
-        <h1>404 Error</h1>
-        <h3>The page that you have requested does not exist!</h3>
+    <div class="container center-align" id="error-landing">
+        <h3>The page that you have requested does not exist.</h3>
         <a href="{% url 'ifgfoc:index' %}" class="waves-effect waves-light lighten-4 btn-large transparent">Go Back Home</a>
     </div>
     
 
+    <style>
+        #error-landing {
+            height: 100vh;
+        }
+
+        #error-landing h3 {
+            font-family: 'Quicksand', sans-serif;
+
+        }
+
+        #error-landing > a {
+        /*box-shadow: none !important;*/
+            border: 3px solid white;
+            box-sizing: border-box;
+            line-height: 7vh;
+            border-radius: 30px;
+            font-family: 'Quicksand', sans-serif;
+            padding-bottom: 2vh;
+        }
+
+        #error-landing > a:hover {
+            color: #89CFF0;
+            border: 3px solid #89CFF0;
+        }
+    </style>
 {% endblock %}
